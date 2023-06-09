@@ -1,0 +1,55 @@
+h3{
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
+
+#div1 {
+  width: 100%;
+  height: 100%;
+}
+
+.box{
+  height: 25rem;
+  width: 30rem;
+  border: 2px solid black;
+  margin: 1rem
+}
+
+button{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  bottom: 0%;
+  padding: 0.8rem;
+  height: 3rem;
+  width: 6rem;
+  cursor: pointer;
+}
+
+button:hover{
+  scale: 1.1;
+  animation: ease-in-out 1000 ;
+}
+
+.show {
+            display: block;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out 5s;
+        }
