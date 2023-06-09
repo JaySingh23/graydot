@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Internship Task</title>
+    <script src="./app.js"></script>
+</head>
+<body>
+
+<h1 style="text-align: center;">Internship Task</h1> 
+<div class="boxes" style="display: flex; justify-content: space-evenly; margin-top: 5rem; overflow: hidden;">
+    <div class="box">
+        <img id="drag1" src="vector1.png" draggable="true" ondragstart="drag(event)">
+        <img id="drag2" src="cardboard.png" draggable="true" ondragstart="drag(event)">
+        <img id="drag3" src="signing.png" draggable="true" ondragstart="drag(event)">
+        <img id="drag4" src="profilePic.png" draggable="true" ondragstart="drag(event)">
+        <h3 id="drag5" draggable="true" ondragstart="drag(event)">Random Text</h3>
+    </div>
+
+    <div class="box" id="box2">
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+</div>
+
+<button onclick="resetBoxes()">RESET</button>
+
+<!-- Notification element -->
+<div id="notification"></div>
+</body>
+</html>
